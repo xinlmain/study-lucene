@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.lucene.search</OriginalElement>
+  <nodes>
+    <node x="325.5" y="0.0">org.apache.lucene.search.Query</node>
+    <node x="0.0" y="551.0">org.apache.lucene.search.BooleanScorer</node>
+    <node x="48.36458333333337" y="250.0">org.apache.lucene.search.TermQuery.TermWeight</node>
+    <node x="242.5" y="460.5">org.apache.lucene.search.FieldCacheTermsFilter.FieldCacheTermsFilterDocIdSet.FieldCacheTermsFilterDocIdSetIterator</node>
+    <node x="196.75" y="370.0">org.apache.lucene.search.DocIdSetIterator</node>
+    <node x="223.28125" y="250.0">org.apache.lucene.search.BooleanQuery.BooleanWeight</node>
+    <node x="629.5" y="472.0">org.apache.lucene.search.TopDocsCollector</node>
+    <node x="505.0" y="102.0">org.apache.lucene.search.MultiTermQuery</node>
+    <node x="170.0" y="551.0">org.apache.lucene.search.TermScorer</node>
+    <node x="0.0" y="704.0">org.apache.lucene.search.DefaultSimilarity</node>
+    <node x="85.5" y="449.0">org.apache.lucene.search.Scorer</node>
+    <node x="542.5" y="261.5">org.apache.lucene.search.PrefixQuery</node>
+    <node x="28.5" y="625.0">org.apache.lucene.search.Similarity</node>
+    <node x="138.0" y="113.5">org.apache.lucene.search.Weight</node>
+    <node x="657.5" y="370.0">org.apache.lucene.search.Collector</node>
+    <node x="0.0" y="125.0">org.apache.lucene.search.TermQuery</node>
+    <node x="260.0" y="102.0">org.apache.lucene.search.BooleanQuery</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.lucene.search.Scorer" target="org.apache.lucene.search.DocIdSetIterator">
+      <point x="0.0" y="-26.0" />
+      <point x="154.0" y="424.0" />
+      <point x="240.25" y="424.0" />
+      <point x="-43.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.search.PrefixQuery" target="org.apache.lucene.search.MultiTermQuery">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="org.apache.lucene.search.BooleanQuery" target="org.apache.lucene.search.Query">
+      <point x="0.0" y="-49.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="org.apache.lucene.search.MultiTermQuery" target="org.apache.lucene.search.Query">
+      <point x="0.0" y="-49.0" />
+      <point x="609.5" y="77.0" />
+      <point x="403.8333333333333" y="77.0" />
+      <point x="31.333333333333314" y="26.0" />
+    </edge>
+    <edge source="org.apache.lucene.search.BooleanQuery.BooleanWeight" target="org.apache.lucene.search.BooleanQuery">
+      <point x="37.5" y="-37.5" />
+      <point x="335.78125" y="225.0" />
+      <point x="372.5" y="225.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="org.apache.lucene.search.TermQuery.TermWeight" target="org.apache.lucene.search.Weight">
+      <point x="31.5" y="-37.5" />
+      <point x="142.86458333333337" y="225.0" />
+      <point x="163.5" y="225.0" />
+      <point x="-25.5" y="37.5" />
+    </edge>
+    <edge source="org.apache.lucene.search.TermQuery.TermWeight" target="org.apache.lucene.search.TermQuery">
+      <point x="-31.5" y="-37.5" />
+      <point x="79.86458333333337" y="225.0" />
+      <point x="59.0" y="225.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="org.apache.lucene.search.TermScorer" target="org.apache.lucene.search.Scorer">
+      <point x="0.0" y="-14.5" />
+      <point x="233.0" y="526.0" />
+      <point x="188.25" y="526.0" />
+      <point x="34.25" y="26.0" />
+    </edge>
+    <edge source="org.apache.lucene.search.DefaultSimilarity" target="org.apache.lucene.search.Similarity">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.search.BooleanQuery.BooleanWeight" target="org.apache.lucene.search.Weight">
+      <point x="-37.5" y="-37.5" />
+      <point x="260.78125" y="225.0" />
+      <point x="214.5" y="225.0" />
+      <point x="25.5" y="37.5" />
+    </edge>
+    <edge source="org.apache.lucene.search.BooleanScorer" target="org.apache.lucene.search.Scorer">
+      <point x="0.0" y="-14.5" />
+      <point x="75.0" y="526.0" />
+      <point x="119.75" y="526.0" />
+      <point x="-34.25" y="26.0" />
+    </edge>
+    <edge source="org.apache.lucene.search.TopDocsCollector" target="org.apache.lucene.search.Collector">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="org.apache.lucene.search.FieldCacheTermsFilter.FieldCacheTermsFilterDocIdSet.FieldCacheTermsFilterDocIdSetIterator" target="org.apache.lucene.search.DocIdSetIterator">
+      <point x="0.0" y="-14.5" />
+      <point x="413.5" y="424.0" />
+      <point x="327.25" y="424.0" />
+      <point x="43.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.search.TermQuery" target="org.apache.lucene.search.Query">
+      <point x="0.0" y="-26.0" />
+      <point x="59.0" y="77.0" />
+      <point x="341.1666666666667" y="77.0" />
+      <point x="-31.333333333333314" y="26.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="703.5" y="435.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
